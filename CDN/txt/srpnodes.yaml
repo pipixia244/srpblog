@@ -1,47 +1,47 @@
 #---------------------------------------------------#
-## ×îºó¸üĞÂÊ±¼ä£º2020-05-10 06:20:15
+## æœ€åæ›´æ–°æ—¶é—´ï¼š2020-05-10 06:20:15
 #---------------------------------------------------#
 
-# HTTP ´úÀí¶Ë¿Ú
+# HTTP ä»£ç†ç«¯å£
 port: 7890 
 
-# SOCKS5 ´úÀí¶Ë¿Ú
+# SOCKS5 ä»£ç†ç«¯å£
 socks-port: 7891
 
-# Linux ºÍ macOS µÄ redir ´úÀí¶Ë¿Ú
+# Linux å’Œ macOS çš„ redir ä»£ç†ç«¯å£
 redir-port: 7893
 
-# ÔÊĞí¾ÖÓòÍøµÄÁ¬½Ó
+# å…è®¸å±€åŸŸç½‘çš„è¿æ¥
 allow-lan: false
 
-# ¹æÔòÄ£Ê½£ºRule£¨¹æÔò£© / Global£¨È«¾Ö´úÀí£©/ Direct£¨È«¾ÖÖ±Á¬£©
+# è§„åˆ™æ¨¡å¼ï¼šRuleï¼ˆè§„åˆ™ï¼‰ / Globalï¼ˆå…¨å±€ä»£ç†ï¼‰/ Directï¼ˆå…¨å±€ç›´è¿ï¼‰
 mode: Rule
 
-# ÉèÖÃÈÕÖ¾Êä³ö¼¶±ğ (Ä¬ÈÏ¼¶±ğ£ºsilent£¬¼´²»Êä³öÈÎºÎÄÚÈİ£¬ÒÔ±ÜÃâÒòÈÕÖ¾ÄÚÈİ¹ı´ó¶øµ¼ÖÂ³ÌĞòÄÚ´æÒç³ö£©¡£
-# 5 ¸ö¼¶±ğ£ºsilent / info / warning / error / debug¡£¼¶±ğÔ½¸ßÈÕÖ¾Êä³öÁ¿Ô½´ó£¬Ô½ÇãÏòÓÚµ÷ÊÔ£¬ÈôĞèÒªÇë×ÔĞĞ¿ªÆô¡£
+# è®¾ç½®æ—¥å¿—è¾“å‡ºçº§åˆ« (é»˜è®¤çº§åˆ«ï¼šsilentï¼Œå³ä¸è¾“å‡ºä»»ä½•å†…å®¹ï¼Œä»¥é¿å…å› æ—¥å¿—å†…å®¹è¿‡å¤§è€Œå¯¼è‡´ç¨‹åºå†…å­˜æº¢å‡ºï¼‰ã€‚
+# 5 ä¸ªçº§åˆ«ï¼šsilent / info / warning / error / debugã€‚çº§åˆ«è¶Šé«˜æ—¥å¿—è¾“å‡ºé‡è¶Šå¤§ï¼Œè¶Šå€¾å‘äºè°ƒè¯•ï¼Œè‹¥éœ€è¦è¯·è‡ªè¡Œå¼€å¯ã€‚
 log-level: silent
 
-# Clash µÄ RESTful API
+# Clash çš„ RESTful API
 external-controller: '0.0.0.0:9090'
 
-# RESTful API µÄ¿ÚÁî
+# RESTful API çš„å£ä»¤
 secret: ''
 
-# Äú¿ÉÒÔ½«¾²Ì¬ÍøÒ³×ÊÔ´£¨Èç clash-dashboard£©·ÅÖÃÔÚÒ»¸öÄ¿Â¼ÖĞ£¬clash ½«»á·şÎñÓÚ `RESTful API/ui`
-# ²ÎÊıÓ¦ÌîĞ´ÅäÖÃÄ¿Â¼µÄÏà¶ÔÂ·¾¶»ò¾ø¶ÔÂ·¾¶¡£
+# æ‚¨å¯ä»¥å°†é™æ€ç½‘é¡µèµ„æºï¼ˆå¦‚ clash-dashboardï¼‰æ”¾ç½®åœ¨ä¸€ä¸ªç›®å½•ä¸­ï¼Œclash å°†ä¼šæœåŠ¡äº `RESTful API/ui`
+# å‚æ•°åº”å¡«å†™é…ç½®ç›®å½•çš„ç›¸å¯¹è·¯å¾„æˆ–ç»å¯¹è·¯å¾„ã€‚
 # external-ui: folder
 
 Proxy:
-  - {name: HK1ÈºÓÑÓÃ(ÒÆ¶¯Ê×Ñ¡), type: vmess, server: v.srprpr.ga, port: 443, uuid: ea38a5ea-a92e-4ead-8a8e-69ca5493e38a, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /008e4b28/, ws-headers: { Host: v.srprpr.ga}}
-  - {name: HK2ÈºÓÑÓÃ(ÒÆ¶¯Ê×Ñ¡), type: vmess, server: v0.srprpr.ga, port: 443, uuid: 5d26de7e-b4d4-4e5f-b1e0-4d75d264ce89, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /de147c27/, ws-headers: { Host: v0.srprpr.ga}}
-  - {name: JP1ÈºÓÑÓÃ(ÈıÍø¾ù¿É), type: vmess, server: qdm1.cdnyixia.xyz, port: 20002, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
-  - {name: JP2ÈºÓÑÓÃ(ÈıÍø¾ù¿É), type: vmess, server: qdm1.cdnyixia.xyz, port: 20003, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
-  - {name: TW1ÈºÓÑÓÃ(±¸ÓÃ½Úµã), type: vmess, server: cn2-36.yootoo6oocoo1oo.xyz, port: 20011, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
-  - {name: SG1ÈºÓÑÓÃ(Ã²ËÆºÜ¿ì), type: vmess, server: 120.224.163.133, port: 20020, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
-  - {name: HK0ÈºÓÑÓÃ(³¬´ó¿í´ø), type: vmess, server: 119.39.28.49, port: 20005, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
+  - {name: HK1ç¾¤å‹ç”¨(ç§»åŠ¨é¦–é€‰), type: vmess, server: v.srprpr.ga, port: 443, uuid: ea38a5ea-a92e-4ead-8a8e-69ca5493e38a, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /008e4b28/, ws-headers: { Host: v.srprpr.ga}}
+  - {name: HK2ç¾¤å‹ç”¨(ç§»åŠ¨é¦–é€‰), type: vmess, server: v0.srprpr.ga, port: 443, uuid: 5d26de7e-b4d4-4e5f-b1e0-4d75d264ce89, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /de147c27/, ws-headers: { Host: v0.srprpr.ga}}
+  - {name: JP1ç¾¤å‹ç”¨(ä¸‰ç½‘å‡å¯), type: vmess, server: qdm1.cdnyixia.xyz, port: 20002, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
+  - {name: JP2ç¾¤å‹ç”¨(ä¸‰ç½‘å‡å¯), type: vmess, server: qdm1.cdnyixia.xyz, port: 20003, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
+  - {name: TW1ç¾¤å‹ç”¨(å¤‡ç”¨èŠ‚ç‚¹), type: vmess, server: cn2-36.yootoo6oocoo1oo.xyz, port: 20011, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
+  - {name: SG1ç¾¤å‹ç”¨(è²Œä¼¼å¾ˆå¿«), type: vmess, server: 120.224.163.133, port: 20020, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
+  - {name: HK0ç¾¤å‹ç”¨(è¶…å¤§å®½å¸¦), type: vmess, server: 119.39.28.49, port: 20005, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
 
 Proxy Group:
-  - { name: "Proxy", type: select, proxies: ["HK1ÈºÓÑÓÃ(ÒÆ¶¯Ê×Ñ¡)","HK2ÈºÓÑÓÃ(ÒÆ¶¯Ê×Ñ¡)","HK0ÈºÓÑÓÃ(³¬´ó¿í´ø)","JP1ÈºÓÑÓÃ(ÈıÍø¾ù¿É)","JP2ÈºÓÑÓÃ(ÈıÍø¾ù¿É)","SG1ÈºÓÑÓÃ(Ã²ËÆºÜ¿ì)","TW1ÈºÓÑÓÃ(±¸ÓÃ½Úµã)"] }
+  - { name: "Proxy", type: select, proxies: ["HK1ç¾¤å‹ç”¨(ç§»åŠ¨é¦–é€‰)","HK2ç¾¤å‹ç”¨(ç§»åŠ¨é¦–é€‰)","HK0ç¾¤å‹ç”¨(è¶…å¤§å®½å¸¦)","JP1ç¾¤å‹ç”¨(ä¸‰ç½‘å‡å¯)","JP2ç¾¤å‹ç”¨(ä¸‰ç½‘å‡å¯)","SG1ç¾¤å‹ç”¨(è²Œä¼¼å¾ˆå¿«)","TW1ç¾¤å‹ç”¨(å¤‡ç”¨èŠ‚ç‚¹)"] }
   - { name: "Domestic", type: select, proxies: ["DIRECT","Proxy"] }
   - { name: "China_media", type: select, proxies: ["Domestic","Proxy"] }
   - { name: "Global_media", type: select, proxies: ["Proxy"]}
