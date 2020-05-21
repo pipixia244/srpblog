@@ -33,7 +33,7 @@ secret: ''
 
 Proxy:
   - {name: HK1群友用(移动首选), type: vmess, server: v.srprpr.ga, port: 443, uuid: ea38a5ea-a92e-4ead-8a8e-69ca5493e38a, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /008e4b28/, ws-headers: { Host: v.srprpr.ga}}
-  - {name: HK2群友用(移动首选), type: vmess, server: v0.srprpr.ga, port: 443, uuid: 5d26de7e-b4d4-4e5f-b1e0-4d75d264ce89, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /de147c27/, ws-headers: { Host: v0.srprpr.ga}}
+  - {name: JP0群友用(樱花服务器), type: vmess, server: czlt-01.freexyz.cf, port: 20002, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: JP1群友用(三网均可), type: vmess, server: qdm1.cdnyixia.xyz, port: 20002, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: JP2群友用(三网均可), type: vmess, server: qdm1.cdnyixia.xyz, port: 20003, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: TW1群友用(备用节点), type: vmess, server: cn2-36.yootoo6oocoo1oo.xyz, port: 20011, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
