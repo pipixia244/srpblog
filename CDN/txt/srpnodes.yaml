@@ -41,7 +41,7 @@ Proxy:
   - {name: HK0群友用(超大宽带), type: vmess, server: 119.39.28.49, port: 20005, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
 
 Proxy Group:
-  - { name: "Proxy", type: select, proxies: ["HK1群友用(移动首选)","HK2群友用(移动首选)","HK0群友用(超大宽带)","JP1群友用(三网均可)","JP2群友用(三网均可)","SG1群友用(貌似很快)","TW1群友用(备用节点)"] }
+  - { name: "Proxy", type: select, proxies: ["HK1群友用(移动首选)","JP0群友用(樱花服务器)","HK0群友用(超大宽带)","JP1群友用(三网均可)","JP2群友用(三网均可)","SG1群友用(貌似很快)","TW1群友用(备用节点)"] }
   - { name: "Domestic", type: select, proxies: ["DIRECT","Proxy"] }
   - { name: "China_media", type: select, proxies: ["Domestic","Proxy"] }
   - { name: "Global_media", type: select, proxies: ["Proxy"]}
