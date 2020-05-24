@@ -41,7 +41,7 @@ Proxy:
   - {name: HK0群友用(超大宽带), type: vmess, server: 119.39.28.49, port: 20005, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: HK2群友用(新增节点), type: vmess, server: hn.yd.freexyz.club, port: 20004, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: HK3群友用(不要下载，流量太贵，IPLC专线), type: vmess, server: 120.241.33.84, port: 30010, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
-  - {name: 解锁网易云端口, type: http, server: 127.0.0.1, port: 8080}
+  - {name: 解锁网易云, type: http, server: 106.52.127.72, port: 19951}
 
 Proxy Group:
   - { name: "Proxy", type: select, proxies: ["HK1群友用(移动首选)","HK3群友用(不要下载，流量太贵，IPLC专线)","JP0群友用(樱花服务器)","HK0群友用(超大宽带)","JP1群友用(三网均可)","JP2群友用(三网均可)","SG1群友用(貌似很快)","TW1群友用(备用节点)","HK2群友用(新增节点)"] }
@@ -49,7 +49,7 @@ Proxy Group:
   - { name: "China_media", type: select, proxies: ["Domestic","Proxy"] }
   - { name: "Global_media", type: select, proxies: ["Proxy"]}
   - { name: "Others", type: select, proxies: ["Proxy","Domestic"]}
-  - { name: "Netease Music", type: select, proxies: ["解锁网易云端口"]}
+  - { name: "Netease Music", type: select, proxies: ["解锁网易云"]}
 
 Rule:
 #Domain规则
