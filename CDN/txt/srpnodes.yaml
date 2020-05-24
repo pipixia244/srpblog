@@ -41,6 +41,7 @@ Proxy:
   - {name: HK0群友用(超大宽带), type: vmess, server: 119.39.28.49, port: 20005, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: HK2群友用(新增节点), type: vmess, server: hn.yd.freexyz.club, port: 20004, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: ajax.microsoft.com}}
   - {name: HK3群友用(不要下载，流量太贵，IPLC专线), type: vmess, server: 120.241.33.84, port: 30010, uuid: b78d6628-f4cd-3601-91a7-e278fff1bfae, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: { Host: www.bing.com}}
+  - {name: 解锁网易云端口, type: http, server: 127.0.0.1, port: 1145}
 
 Proxy Group:
   - { name: "Proxy", type: select, proxies: ["HK1群友用(移动首选)","HK3群友用(不要下载，流量太贵，IPLC专线)","JP0群友用(樱花服务器)","HK0群友用(超大宽带)","JP1群友用(三网均可)","JP2群友用(三网均可)","SG1群友用(貌似很快)","TW1群友用(备用节点)","HK2群友用(新增节点)"] }
@@ -48,8 +49,44 @@ Proxy Group:
   - { name: "China_media", type: select, proxies: ["Domestic","Proxy"] }
   - { name: "Global_media", type: select, proxies: ["Proxy"]}
   - { name: "Others", type: select, proxies: ["Proxy","Domestic"]}
+  - { name: "Netease Music", type: select, proxies: ["解锁网易云端口"]}
 
 Rule:
+#Domain规则
+- DOMAIN-SUFFIX,163yun.com,Netease Music
+- DOMAIN-SUFFIX,music.163.com,Netease Music
+- DOMAIN-SUFFIX,music.126.net,Netease Music
+- DOMAIN-SUFFIX,api.iplay.163.com,Netease Music
+- DOMAIN-SUFFIX,apm.music.163.com,Netease Music
+- DOMAIN-SUFFIX,apm3.music.163.com,Netease Music
+- DOMAIN-SUFFIX,interface.music.163.com,Netease Music
+- DOMAIN-SUFFIX,interface3.music.163.com,Netease Music
+- DOMAIN-SUFFIX,mam.netease.com,Netease Music
+- DOMAIN-SUFFIX,hz.netease.com,Netease Music
+#CIDR规则
+- IP-CIDR,39.105.63.80/32,Netease Music
+- IP-CIDR,45.254.48.1/32,Netease Music
+- IP-CIDR,47.100.127.239/32,Netease Music
+- IP-CIDR,59.111.21.14/31,Netease Music
+- IP-CIDR,59.111.179.214/32,Netease Music
+- IP-CIDR,59.111.181.38/32,Netease Music
+- IP-CIDR,59.111.181.60/32,Netease Music
+- IP-CIDR,59.111.160.195/32,Netease Music
+- IP-CIDR,59.111.160.197/32,Netease Music
+- IP-CIDR,59.111.181.35/32,Netease Music
+- IP-CIDR,59.111.238.29/32,Netease Music
+- IP-CIDR,101.71.154.241/32,Netease Music
+- IP-CIDR,103.126.92.132/32,Netease Music
+- IP-CIDR,103.126.92.133/32,Netease Music
+- IP-CIDR,112.13.119.17/32,Netease Music
+- IP-CIDR,112.13.122.1/32,Netease Music
+- IP-CIDR,115.236.118.33/32,Netease Music
+- IP-CIDR,115.236.121.1/32,Netease Music
+- IP-CIDR,118.24.63.156/32,Netease Music
+- IP-CIDR,193.112.159.225/32,Netease Music
+- IP-CIDR,223.252.199.66/32,Netease Music
+- IP-CIDR,223.252.199.67/32,Netease Music
+
 - DOMAIN,gs.apple.com,Proxy
 - DOMAIN-SUFFIX,mzstatic.com,Domestic
 - DOMAIN-SUFFIX,akadns.net,Domestic
